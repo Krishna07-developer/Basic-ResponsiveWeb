@@ -407,6 +407,10 @@ flex-shrink: 0;
         margin-left: 500px;
         margin-top: 20px;
     }
+    .absolute-more{
+        position: absolute;
+        margin-right: 50px;
+    }
 }
 
 
