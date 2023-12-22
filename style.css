@@ -343,8 +343,9 @@ flex-shrink: 0;
     }
     .top-image button{
         text-wrap: nowrap;
-        margin-left: 330px;
+        margin-left: 400px;
         margin-top: 30px;
+        
     }
 
     /* .no-padding{
@@ -403,7 +404,7 @@ flex-shrink: 0;
     }
     .top-image button{
         text-wrap: nowrap;
-        margin-left: 550px;
+        margin-left: 500px;
         margin-top: 20px;
     }
 }
@@ -433,7 +434,8 @@ flex-shrink: 0;
     }
     .absolute{
         font-size: smaller;
-        margin-top: -50%;
+        margin-top: -20%;
+        margin-left: -20%;
         padding: auto;
         color: red;
     }
@@ -448,8 +450,8 @@ flex-shrink: 0;
     }
     .top-image button{
         text-wrap: nowrap;
-        margin-left: 530px;
-        margin-top: 30px;
+        margin-left: 350px;
+        margin-top: 10px;
     }
 }
 
