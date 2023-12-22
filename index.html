@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATGWORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="nav container-fluid d-flex justify-content-around  align-items-center py-3   d-md-flex d-lg-flex d-xl-flex d-none">
+        <img class="" src="./public/whole.png" alt="ATGWORLD">
+        <div class="searchLayout d-flex justify-content-between align-items-center p-4 border-0 w-auto">
+            <img src="./public/baseline-search-24px.svg" alt="search">
+            <input type="text" placeholder="Search for your favorite groups in ATG" >
+        </div>
+        <h4 class="createAcc d-flex align-items-center">Create account. <span>It's free!</span><img class="w-auto" src="./public/baseline-arrow_drop_down-24px.jpg" alt=""></h4>
+    </nav>
+    <section>
+        <div class="top-image ">
+            <img  src="./public/boitumelo-X89VSmdDKE0-unsplash.jpg" alt="random image" class="img-relative position-relative ">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-arrow-left d-block d-lg-none d-md-none text-white position-absolute top-0 m-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+            <button  class="btn  border border-3 text-white position-absolute top-0 d-block d-md-block d-lg-none d-xl-none d-xxl-none">Join Group</button>
+            <div class="absolute">
+                <h1>Computer Engineering</h1>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+        </div>
+        <div class="navigation container d-flex justify-content-between mt-5 align-items-center d-none d-lg-flex d-md-flex ">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" onclick="selectedLink(this)" href="#allpost">All Posts(32)</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="selectedLink(this)" href="#article">Article</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="selectedLink(this)" href="#event">Event</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="selectedLink(this)" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="selectedLink(this)" href="#job">Job</a></li>
+            </ul>
+            <div class="dropdown d-flex gap-2">
+                <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #EDEEF0;color: black;outline: none;border: none;" data-bs-toggle="dropdown">
+                  Write a Post
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+                <button id="join-group" type="button" class="join-group btn btn-primary d-sm-flex d-lg-flex d-md-flex" >
+                    <img src="./public/baseline-group_add-24px.png" class="px-1 d-none d-md-block d-lg-block" alt="group symbol">Join Group
+                </button>
+            </div>
+            <!-- <div class="modal fade" id="myModal">
+
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    
+                    <div class="modal-body">
+                      Modal body..
+                    </div>
+              
+                 
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div> -->
+          </div>
+          <hr class="container d-none d-lg-block d-md-block">
+    </section>
+    <div class="posts d-flex justify-content-between mx-5 my-3 d-sm-flex d-md-none d-lg-none d-xl-none">
+      <h4>Posts(368)</h4>
+      <button class="btn border border-0 " style="background-color: rgb(215, 214, 214);">Filter:All <img  src="./public/downward-arrow.png" style="width: 15px;" alt=""></button>
+    </div>
+    <section class="container d-flex justify-content-between  pt-1 d-sm-flex ">
+      <section class="left d-flex flex-column gap-3">
+        <article>
+          <img src="./public/marek-piwnicki-pdCNgF3RFTk-unsplash.jpg" class="imageCard" alt="">
+          <div class="px-3 no-padding">
+            <h1 class="heading">✍️ Article</h1>
+          <div class="info d-flex justify-content-between ">
+            <h1>What if famous brands had regular fonts? Meet<br/> RegulaBrands!</h1>
+            <div>
+              <img src="./public/baseline-more_vert-24px.svg" alt="" onclick="moreSelectedLink()" class="relative-more">
+              <!-- <div  class="absolute-more hidden">
+                <a href="#">Edit</a>
+                <a href="#">Report</a>
+                <a href="#">Option 3</a>
+              </div> -->
+            </div>
+          </div>
+          <p style="color: #5C5C5C;font-family: IBM Plex Sans;font-size: 19px;font-style: normal;font-weight: 400;line-height: 134.167%">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+          <div class="under-profilenav d-flex justify-content-between align-items-center py-5 ">
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/Rectangle 3.png" alt="image">
+              <h3 class="pt-2">Sarthak Kamra</h3>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/visibility_24px.svg" alt="" class="d-none d-sm-block d-xl-block d-lg-block d-md-block">
+              <h3 class="pt-2">1.4k views</h3>
+            </div>
+            <img class="w-2 bg-secondary p-1 rounded"  src="./public/baseline-share-24px.svg" alt="">
+          </div>
+          </div>
+        </article>
+        <article>
+          <img src="./public/marek-piwnicki-pdCNgF3RFTk-unsplash.jpg" class="imageCard" alt="">
+          <div class="px-3 no-padding">
+            <h1 class="heading">🔬️ Education</h1>
+          <div class="info d-flex justify-content-between ">
+            <h1>Tax Benefits for Investment under National Pension<br/> Scheme launched by Government</h1>
+            <img src="./public/baseline-more_vert-24px.svg" alt="" onclick="moreSelectedLink()" class="relative-more">
+            <!-- <div  class="absolute-more hidden">
+              <a href="#">Edit</a>
+              <a href="#">Report</a>
+              <a href="#">Option 3</a>
+            </div> -->
+          </div>
+          <p style="color: #5C5C5C;font-family: IBM Plex Sans;font-size: 19px;font-style: normal;font-weight: 400;line-height: 134.167%">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+          <div class="under-profilenav d-flex justify-content-between align-items-center py-5">
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/Rectangle 4.png" alt="image">
+              <h3 class="pt-2">Sarah West</h3>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/visibility_24px.svg" alt="" class="d-none d-sm-block  d-lg-block d-md-block d-xl-block">
+              <h3 class="pt-2">1.4k views</h3>
+            </div>
+            <img class="w-2 bg-secondary p-1 rounded"  src="./public/baseline-share-24px.svg" alt="">
+          </div>
+          </div>
+        </article>
+        <article>
+          <img src="./public/marek-piwnicki-pdCNgF3RFTk-unsplash.jpg" class="imageCard" alt="">
+          <div class="px-3 no-padding">
+            <h1 class="heading">🗓️ Meetup</h1>
+          <div class="info d-flex justify-content-between ">
+            <h1>Finance & Investment Elite Social Mixer @Lujiazui</h1>
+            <img src="./public/baseline-more_vert-24px.svg" alt="" onclick="moreSelectedLink()"  class="relative-more hidden">
+            <div  class="absolute-more">
+              <a href="#">Edit</a><br/>
+              <a href="#">Report</a><br/>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+          <div class="d-flex location-dates" >
+            <div class=" d-flex align-items-center">
+              <img src="./public/baseline-today-24px.svg"  alt="">
+              <h3 class="pt-2">Fri, 12 Oct, 2018</h3>
+            </div>
+            <div class="d-flex align-items-center mx-4 mx-lg-5">
+              <img src="./public/outline-location_on-24px 2.svg" alt="">
+              <h3 class="pt-2">Ahmedabad, India</h3>
+            </div>
+          </div>
+          <div class="visit-website d-block p-2 text-center border rounded-2 my-4">
+            <span>Visit Website</span>
+          </div>
+          <div class="under-profilenav d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/Rectangle 5.png" alt="image">
+              <h3  class="pt-2">Ronal Jones</h3>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="./public/visibility_24px.svg" alt="" class="d-none d-sm-block d-lg-block d-md-block d-xl-block">
+              <h3 class="pt-2">1.4k views</h3>
+            </div>
+            <img class="w-2 bg-secondary p-1 rounded"  src="./public/baseline-share-24px.svg" alt="">
+          </div>
+          </div>
+        </article>
+        <article style="height: auto; margin-bottom: 20%;">
+          <div class="px-3 no-padding">
+            <h1 class="heading">💼️ Job</h1>
+            <div class="info d-flex justify-content-between ">
+              <h1>Software Developer</h1>
+              <img src="./public/baseline-more_vert-24px.svg" alt="" onclick="moreSelectedLink()" class="relative-more">
+              <!-- <div  class="absolute-more hidden">
+                <a href="#">Edit</a>
+                <a href="#">Report</a>
+                <a href="#">Option 3</a>
+              </div> -->
+            </div>
+            <div class="d-flex location-dates" >
+              <div class=" d-flex align-items-center">
+                <img src="./public/outline-work_outline-24px.svg"  alt="">
+                <h3 class="pt-2">Innovaccer Analytics Private Ltd.</h3>
+              </div>
+              <div class="d-flex align-items-center mx-5">
+                <img src="./public/outline-location_on-24px 2.svg" alt="">
+                <h3 class="pt-2">Noida, India</h3>
+              </div>
+            </div>
+            <div class="visit-website d-block p-2 text-center border rounded-2 my-4">
+              <span style="color: #02B875;">Apply on Timesjobs</span>
+            </div>
+            <div class="under-profilenav d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-3">
+                <img src="./public/Rectangle 6.png" alt="image">
+                <h3 class="pt-2">Joseph Gray</h3>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./public/visibility_24px.svg" alt="" class="d-none d-sm-block d-xl-block d-lg-block d-md-block">
+                <h3 class="pt-2">1.4k views</h3>
+              </div>
+              <img class="w-2 bg-secondary p-1 rounded"  src="./public/baseline-share-24px.svg" alt="">
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="right d-none d-md-none d-lg-block d-xxl-block ">
+        <div class="d-flex justify-content-evenly">
+          <div class="location-detail d-flex">
+            <img src="./public/outline-location_on-24px 2.svg" alt="">
+            <h3>Noida, India</h3>
+          </div>
+          <img src="./public/baseline-edit-24px.svg" style="width: 20px;height: 20px;flex-shrink: 0" alt="">
+        </div>
+        <hr/>
+        <div class="error-info d-flex justify-content-evenly ">
+          <img src="./public/baseline-error_outline-24px.svg" alt="">
+          <p>Your location will help us serve better<br/> and extend a personalised experience.</p>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

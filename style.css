@@ -1,0 +1,455 @@
+/* Nav Page */
+
+nav{
+    width: 1440px;
+    height: 72px;
+    /* flex-shrink: 0; */
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+}
+nav img{
+    width: 162.566px;
+    height: 24px;
+    flex-shrink: 0;
+}
+nav .searchLayout{
+    max-width: 360px;
+    width: 100%;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: #F2F2F2;
+    
+}
+.createAcc{
+    color: #2E2E2E;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.createAcc span{
+    color: #2F6CE5;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+nav .searchLayout img{
+    max-width:22px;
+    width: 100%;
+    height: 22px;
+    flex-shrink: 0;
+    
+}
+
+nav input{
+    width: 100%;
+    color: #5C5C5C;
+    background-color:#F2F2F2;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    outline: none;
+    border: none;
+    padding-left: 4px;
+}
+
+/* Section Page */
+
+/*.top-image -div */
+.top-image{
+    width: 100%;
+    /* max-width: 1440px; */
+    height: 440px;
+    flex-shrink: 0;
+}
+.top-image img{
+    position: relative;
+    width: 100%;
+    height: 440px;
+}
+
+.top-image .absolute {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    line-height: normal;
+}
+.absolute h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.absolute p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Navigation of links */
+
+.navigation .nav a{
+    color: rgb(154, 151, 151);
+}
+/* a.nav-link {
+    color: rgba(255, 255, 255, 0.123);
+} */
+.nav-link.active{
+    text-decoration: underline;
+    color: red;
+}
+/* articles */
+
+.left{
+    max-width: 692px;
+
+}
+
+
+article{
+    width: 692px;
+    height: 472px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+}
+
+article img.imageCard{
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 4px 4px 0px 0px;
+    background-size: cover;
+}
+
+article h1.heading{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+article div.info h1{
+    width: 600px;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 134.167%; /* 29.517px */
+}
+
+article div.info img{
+    width: 28px;
+    height: 28px;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+}
+
+article .under-profilenav h3{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+article .under-profilenav img:first{
+    width: 48px;
+height: 48px;
+flex-shrink: 0;
+}
+
+.location-detail img{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.location-detail h3{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.error-info img{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.error-info p{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.location-dates div h3{
+    font-size: 15px;
+}
+.location-dates div img{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.visit-website{
+    width: 652px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.visit-website span{
+    color: #E56135;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.4%; 
+}
+
+ .relative-more{
+    position: relative;
+    cursor: pointer;
+}
+
+.hidden{
+    background-color: #2e2e2e23;
+}
+
+.absolute-more{
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 102px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+    left: 40%;
+    margin-top: 20px;
+    z-index: 1;
+    padding: 5px;
+}
+.absolute-more a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+/* Android Version */
+
+@media screen and (min-width:560px) and (max-width:575.98px){
+    section{
+        width: 100%;
+        /* width: 360px; */
+        height: 1068px;
+        font-size: small;
+    }
+    .top-image{
+        /* font-size: small; */
+        width: 100%;
+        height: auto    ;
+    }
+    .top-image img{
+        width: 100%;
+        height: 236px;
+        flex-shrink: 0;
+        background-size: cover; 
+    }
+    .absolute{
+       
+        margin-left: -20%;
+        margin-top: -65%;
+        height: 16.337px;
+        /* flex-shrink: 0; */
+        text-wrap: nowrap;
+
+    }
+    .absolute h1{
+        /* font-size: large ; */
+        width: 177.572px;
+    }
+    .absolute p{
+        /* font-size: medium; */
+        width: 216.259px;
+        height: 11.424px;
+        flex-shrink: 0;
+    }
+    section .left{
+        margin-top: -165%;
+        width: 100%;
+        /* height: 328px; */
+        flex-shrink: 0;
+    }
+    .left article{
+        width: 100%;
+        padding: none;
+        margin-bottom: 20px;
+        font-size: small;
+        height: auto;
+    }
+    .left article .imageCard{
+        width: 100%;
+
+    }
+    .left .location-dates{
+        white-space: nowrap;
+    }
+    .left .location-dates h3{
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .location-dates :nth-child(1){
+        justify-content: center;
+    }
+    .left .visit-website{
+        width: 100%;
+        height: auto;
+    }
+
+        .under-profilenav div h3:nth-child(2) {
+            /* display: flex;
+            flex-direction: column; */
+            text-wrap: wrap;
+            white-space: wrap;
+        }
+
+    .posts{
+        display: block;
+        font-size: small;
+    }
+    .top-image button{
+        text-wrap: nowrap;
+        margin-left: 330px;
+        margin-top: 30px;
+    }
+
+    /* .no-padding{
+        padding: 0;
+        margin: 0;
+    } */
+}
+
+
+/* Small size responsive */
+
+@media screen and (min-width : 576px) and (max-width:767.95px){
+    nav{
+        /* font-size: small; */
+        width: 100%;
+        /* max-width: 768px; */
+    }
+    nav img{
+        width: auto;
+    }
+
+    .absolute{
+        margin-top: -20%;
+    }
+
+    section{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+        height: auto;
+        /* position: fixed; */
+        margin: -10px auto;
+    }
+    article .imageCard{
+        width: 100%;
+        height: auto;
+    }
+    .left {
+        margin:13%;
+        /* max-width: 768px; */
+
+    }
+    .under-profilenav{
+        margin-block: 3%;
+    }
+    article{
+        width: 100%;
+        padding: 0;
+        margin-left: -13%;
+    }
+    .visit-website{
+        width: 100%;
+
+        /* margin-bottom: 10%; */
+    }
+    .top-image button{
+        text-wrap: nowrap;
+        margin-left: 550px;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Less than 561px */
+
+@media screen and (min-width:300px) and (max-width : 560px) {
+    .section,article{
+        width: 100%; 
+        height: auto;
+        font-size: small;
+    }
+    .top-image{
+        width: 100%;
+        height: auto;
+    }
+    .top-image img{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+        /* margin-right: 10px; */
+        padding: none;
+        margin: -9px;
+    }
+    .absolute{
+        font-size: smaller;
+        margin-top: -50%;
+        padding: auto;
+        color: red;
+    }
+    .posts{
+        margin-top: -50%;
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+    }
+    .posts button{
+        font-size: 20px;
+    }
+    .top-image button{
+        text-wrap: nowrap;
+        margin-left: 530px;
+        margin-top: 30px;
+    }
+}
+
